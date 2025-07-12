@@ -10,11 +10,12 @@ import os
 packages = ["PyQt5", "psutil", "py7zr", "configparser"]
 excludes = ["tkinter"]
 
-# Include files
-include_files = [
-    ("Icons/", "Icons/"),
-    ("Portable apps/", "Portable apps/"),
-]
+# Include files (only if they exist)
+include_files = []
+if os.path.exists("Icons/"):
+    include_files.append(("Icons/", "Icons/"))
+if os.path.exists("Portable apps/"):
+    include_files.append(("Portable apps/", "Portable apps/"))
 
 # Build options
 build_exe_options = {

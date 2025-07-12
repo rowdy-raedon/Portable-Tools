@@ -1,0 +1,3 @@
+# This file ensures the "Portable apps" directory is included in git
+# Place your portable .exe files in this directory
+# Subfolders are supported for organization
