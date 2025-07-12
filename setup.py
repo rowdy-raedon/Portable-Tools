@@ -22,7 +22,6 @@ build_exe_options = {
     "excludes": excludes,
     "include_files": include_files,
     "optimize": 2,
-    "include_msvcrt": True,
 }
 
 # Executables
